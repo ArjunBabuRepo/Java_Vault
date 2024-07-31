@@ -78,7 +78,7 @@ public class AllDocumentDownload {
               || last3Letters.equalsIgnoreCase("ptx") || last3Letters.equalsIgnoreCase("txt")
               || last3Letters.equalsIgnoreCase("zip")) {
             if (flag == 0) {
-              new File("D:/OneDrive - Snuvik Technologies Pvt Ltd/Document Project Synaptics/"
+              new File("D:/OneDrive/Document Project Synaptics/"
                   + prefixNumber + "/" + titleBlockNumber).mkdir();
               System.out.println("Document Created = " + titleBlockNumber);
               ++flag;
@@ -88,7 +88,7 @@ public class AllDocumentDownload {
             // Read the contents of the stream
             InputStream stream = ((IAttachmentFile) row2).getFile();
             FileOutputStream outputStream = new FileOutputStream(
-                "D:/OneDrive - Snuvik Technologies Pvt Ltd/Document Project Synaptics/"
+                "D:/OneDrive/Document Project Synaptics/"
                     + prefixNumber + "/" + titleBlockNumber + "/" + fileName);
             int read;
             byte[] bytes = new byte[1024];
